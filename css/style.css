@@ -570,3 +570,7 @@ h6,
     background-image: url('img/carousel-3.jpg');
   }
 }
+
+.footer a:hover {
+    color: #fecf05 !important;
+}

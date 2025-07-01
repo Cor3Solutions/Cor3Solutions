@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <link href="img/COR3LOGO.png" rel="icon">
+    <link href="img/corelogo.png" rel="icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,12 +115,9 @@
 
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0" style="font-size: 2rem;">
-                <img class="me-3" src="img/COR3LOGO.png" alt="Icon" style="width: 70px; height: auto;">
-                Cor3 Solutions
-            </h1>
-        </a>
+        <a href="index.html" class="navbar-brand ms-5 ms-lg-3 d-flex align-items-center">
+            <img src="img/COR3LOGO.png" alt="Cor3 Logo" class="me-3" style="max-height: 60px;">
+            </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -155,76 +152,111 @@
             </div>
 
             <ul class="filter list-inline text-center mb-4">
-                <li class="list-inline-item"><button class="btn btn-outline-primary" data-filter=".web">Web Dev</button>
+                <li class="list-inline-item">
+                    <button class="btn btn-outline-primary active" data-filter=".web">
+                        Web Development / UI
+                    </button>
                 </li>
-                <li class="list-inline-item"><button class="btn btn-outline-primary" data-filter=".social">Social
-                        Media</button></li>
+                <li class="list-inline-item dropdown d-inline-block">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Posters / Graphic Designs
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".social">All Designs</a></li>
+                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".gym">Gyms</a></li>
+                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".condo">Condominiums</a></li>
+                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".resort">Resorts</a></li>
+                    </ul>
+                </li>
             </ul>
 
             <div class="row g-4" id="isotope-gallery-container">
                 <div class="col-md-4 isotope-item web">
                     <div class="card">
-                        <img src="img/portfolio/web1.png" class="card-img-top" alt="Web Project 1">
+                        <img src="img/portfolio/web1.png" class="card-img-top" alt="AXYZ Gym Management System">
                         <div class="card-body">
-                            <h5 class="card-title">Web Dev Project Title 1</h5>
-                            <p class="card-text">Short description of this web development project.</p>
+                            <h5 class="card-title">AXYZ Gym Management System</h5>
+                            <p class="card-text">A web system with machine learning capabilities to predict churn and
+                                monitor gym membership renewals.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 isotope-item web">
                     <div class="card">
-                        <img src="img/portfolio/web2.png" class="card-img-top" alt="Web Project 2">
+                        <img src="img/portfolio/web2.png" class="card-img-top" alt="Smart Commuting UI">
                         <div class="card-body">
-                            <h5 class="card-title">Web Dev Project Title 1</h5>
-                            <p class="card-text">Short description of this web development project.</p>
+                            <h5 class="card-title">Smart Commuting – UI Design</h5>
+                            <p class="card-text">A modern user interface designed in Figma to support seamless, smart
+                                commuting experiences.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 isotope-item web">
                     <div class="card">
-                        <img src="img/portfolio/web3.png" class="card-img-top" alt="Web Project 3">
+                        <img src="img/portfolio/web3.png" class="card-img-top" alt="CICS Hub UI">
                         <div class="card-body">
-                            <h5 class="card-title">Web Dev Project Title 1</h5>
-                            <p class="card-text">Short description of this web development project.</p>
+                            <h5 class="card-title">CICS Hub – Digital Archives UI</h5>
+                            <p class="card-text">A Figma-based user interface concept for a digital archive and document
+                                management platform.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 isotope-item web">
                     <div class="card">
-                        <img src="img/portfolio/web4.png" class="card-img-top" alt="Web Project 4">
+                        <img src="img/portfolio/web4.png" class="card-img-top" alt="ITsAllGreen Website">
                         <div class="card-body">
-                            <h5 class="card-title">Web Dev Project Title 1</h5>
-                            <p class="card-text">Short description of this web development project.</p>
+                            <h5 class="card-title">ITsAllGreen – SDG Promotion Website</h5>
+                            <p class="card-text">A responsive website advocating for sustainable development goals and
+                                eco-awareness.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 isotope-item web">
                     <div class="card">
-                        <img src="img/portfolio/web5.png" class="card-img-top" alt="Web Project 5">
+                        <img src="img/portfolio/web5.png" class="card-img-top" alt="Cliks Staycation">
                         <div class="card-body">
-                            <h5 class="card-title">Web Dev Project Title 1</h5>
-                            <p class="card-text">Short description of this web development project.</p>
+                            <h5 class="card-title">Cliks – Staycation & Condo Rentals</h5>
+                            <p class="card-text">A booking website offering staycation and condo rental services with
+                                real-time listings.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 isotope-item social">
+
+                <div class="col-md-4 isotope-item social gym">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="Social Media Project 1">
+                        <img src="img/posters/gym1.png" class="card-img-top" alt="Gym Poster 1">
                         <div class="card-body">
-                            <h5 class="card-title">Social Media Project Title 1</h5>
-                            <p class="card-text">Short description of this social media campaign or design.</p>
+                            <h5 class="card-title">AXYZ Gym Poster</h5>
+                            <p class="card-text">Promotional poster design for gym membership campaigns.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 isotope-item social">
+
+                <div class="col-md-4 isotope-item social condo">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="Social Media Project 2">
+                        <img src="img/posters/condo1.png" class="card-img-top" alt="Condo Poster 1">
                         <div class="card-body">
-                            <h5 class="card-title">Social Media Project Title 2</h5>
-                            <p class="card-text">Details about the social media strategy or content created.</p>
+                            <h5 class="card-title">Cliks Condo Poster</h5>
+                            <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-4 isotope-item social resort">
+                    <div class="card">
+                        <img src="img/posters/resort1.png" class="card-img-top" alt="Resort Poster 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dreamland Resort Promotion</h5>
+                            <p class="card-text">Engaging poster created to attract tourists to a new resort.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -302,13 +334,40 @@
 
             // Set initial filter to 'web' so only web items are shown by default
             $grid.isotope({ filter: '.web' });
-            // Add 'active' class to the 'Web Dev' button initially
+            // Add 'active' class to the 'Web Development / UI' button initially
             $('.filter button[data-filter=".web"]').addClass('active');
 
 
+            // Event listener for main filter buttons (Web Dev, Posters/Graphic Designs dropdown toggle)
             $('.filter button').on('click', function () {
+                $('.filter button').removeClass('active'); // Deactivate all main buttons
+                $('.filter-sub').removeClass('active'); // Deactivate all dropdown sub-items
+                $(this).addClass('active'); // Activate the clicked main button
+
+                var filterValue = $(this).attr('data-filter');
+                if (filterValue) { // If it's a direct filter button
+                    $grid.isotope({ filter: filterValue });
+                } else { // If it's the dropdown toggle, filter to all social by default
+                    $grid.isotope({ filter: '.social' });
+                    // Optionally, you might want to highlight "All Designs" or none within dropdown here
+                    $('.filter-sub[data-filter=".social"]').addClass('active');
+                }
+            });
+
+            // Event listener for dropdown sub-filter items
+            $('.dropdown-menu .filter-sub').on('click', function (e) {
+                e.preventDefault(); // Prevent default link behavior
+
+                // Deactivate all main filter buttons and all dropdown sub-items
                 $('.filter button').removeClass('active');
+                $('.filter-sub').removeClass('active');
+
+                // Activate the clicked dropdown item
                 $(this).addClass('active');
+
+                // Activate the parent dropdown toggle button
+                $(this).closest('.dropdown').find('.dropdown-toggle').addClass('active');
+
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({ filter: filterValue });
             });

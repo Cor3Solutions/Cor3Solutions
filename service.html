@@ -22,7 +22,8 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
@@ -39,6 +40,7 @@
         <img class="position-absolute top-50 start-50 translate-middle" src="img/COR3LOGO.png" alt="Icon"
             style="width: 70px; height: auto;">
     </div>
+
     <!-- Topbar Start -->
     <div class="container-fluid p-0 wow fadeIn" style="background-color: #133778; color: #ffffff;"
         data-wow-delay="0.1s">
@@ -141,7 +143,6 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb text-uppercase mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">Sample Works</li>
                 </ol>
             </nav>
@@ -157,301 +158,275 @@
                     clients' needs.</p>
             </div>
 
-            <ul class="filter list-inline text-center mb-4">
-                <li class="list-inline-item">
-                    <button class="btn btn-outline-primary active" data-filter=".web">
-                        Web Development / UI
-                    </button>
+            <ul class="nav nav-pills justify-content-center mb-4" id="portfolioTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="web-tab" data-bs-toggle="pill" data-bs-target="#web"
+                        type="button">Websites</button>
                 </li>
-                <li class="list-inline-item dropdown d-inline-block">
-                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Posters / Graphic Designs
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".social">All Designs</a></li>
-                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".gym">Gyms</a></li>
-                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".estate">Real Estate</a></li>
-                        <li><a class="dropdown-item filter-sub" href="#" data-filter=".resort">Resorts</a></li>
-                    </ul>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="poster-tab" data-bs-toggle="pill" data-bs-target="#poster"
+                        type="button">Posters</button>
                 </li>
-                <li class="list-inline-item">
-                    <button class="btn btn-outline-primary" data-filter=".drone">
-                        Drone Shots
-                    </button>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="video-tab" data-bs-toggle="pill" data-bs-target="#video"
+                        type="button">Videos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drone-tab" data-bs-toggle="pill" data-bs-target="#drone"
+                        type="button">Drone Shots</button>
                 </li>
             </ul>
-            <div class="container py-5">
-                <h2 class="text-center mb-4">Our Portfolio</h2>
 
-                <!-- Tabs -->
-                <ul class="nav nav-pills justify-content-center mb-4" id="portfolioTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="web-tab" data-bs-toggle="pill" data-bs-target="#web"
-                            type="button">Websites</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="poster-tab" data-bs-toggle="pill" data-bs-target="#poster"
-                            type="button">Posters</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="video-tab" data-bs-toggle="pill" data-bs-target="#video"
-                            type="button">Videos</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="drone-tab" data-bs-toggle="pill" data-bs-target="#drone"
-                            type="button">Drone Shots</button>
-                    </li>
-                </ul>
-
-                <!-- Tab Contents -->
-                <div class="tab-content" id="portfolioTabsContent">
-                    <!-- Websites -->
-                    <div class="tab-pane fade show active" id="web" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+            <div class="tab-content" id="portfolioTabsContent">
+                <div class="tab-pane fade show active" id="web" role="tabpanel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/web1.png" class="card-img-top"
                                         alt="AXYZ Gym Management System">
                                     <div class="card-body">
                                         <h5 class="card-title">AXYZ Gym Management System</h5>
                                         <p class="card-text">A web system with machine learning capabilities to predict
-                                            churn and
-                                            monitor gym membership renewals.</p>
+                                            churn and monitor gym membership renewals.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/web2.png" class="card-img-top" alt="Smart Commuting UI">
                                     <div class="card-body">
                                         <h5 class="card-title">Smart Commuting – UI Design</h5>
                                         <p class="card-text">A modern user interface designed in Figma to support
-                                            seamless, smart
-                                            commuting experiences.</p>
+                                            seamless, smart commuting experiences.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/web3.png" class="card-img-top" alt="CICS Hub UI">
                                     <div class="card-body">
                                         <h5 class="card-title">CICS Hub – Digital Archives UI</h5>
                                         <p class="card-text">A Figma-based user interface concept for a digital archive
-                                            and document
-                                            management platform.</p>
+                                            and document management platform.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/web4.png" class="card-img-top" alt="ITsAllGreen Website">
                                     <div class="card-body">
                                         <h5 class="card-title">ITsAllGreen – SDG Promotion Website</h5>
                                         <p class="card-text">A responsive website advocating for sustainable development
-                                            goals and
-                                            eco-awareness.</p>
+                                            goals and eco-awareness.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/web5.png" class="card-img-top" alt="Cliks Staycation">
                                     <div class="card-body">
                                         <h5 class="card-title">Cliks – Staycation & Condo Rentals</h5>
                                         <p class="card-text">A booking website offering staycation and condo rental
-                                            services with
-                                            real-time listings.</p>
+                                            services with real-time listings.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- add more website projects here -->
                         </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
+                </div>
 
-                    <!-- Posters -->
-                    <div class="tab-pane fade" id="poster" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                <div class="tab-pane fade" id="poster" role="tabpanel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/gym1.png" class="card-img-top" alt="Gym Poster 1">
                                     <div class="card-body">
                                         <h5 class="card-title">APF</h5>
                                         <p class="card-text">A dynamic promotional poster created for APF to attract new
-                                            members
-                                            through engaging visual design.</p>
+                                            members through engaging visual design.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/gym2.png" class="card-img-top" alt="Gym Poster 2">
                                     <div class="card-body">
                                         <h5 class="card-title">APF Gym Rates</h5>
                                         <p class="card-text">Clear and appealing rate card design for APF Gym,
-                                            highlighting
-                                            affordable plans and service tiers.</p>
+                                            highlighting affordable plans and service tiers.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/gym3.png" class="card-img-top" alt="Gym Poster 3">
                                     <div class="card-body">
                                         <h5 class="card-title">AXYZ Taekwondo Class</h5>
                                         <p class="card-text">Promotional artwork designed to encourage signups for
-                                            AXYZ’s Taekwondo
-                                            classes, targeting youth and fitness enthusiasts.</p>
+                                            AXYZ’s Taekwondo classes, targeting youth and fitness enthusiasts.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/gym4.png" class="card-img-top" alt="Gym Poster 4">
                                     <div class="card-body">
                                         <h5 class="card-title">AXYZ Gym Rates</h5>
                                         <p class="card-text">Professional pricing layout for AXYZ Gym showcasing
-                                            membership tiers
-                                            and fitness services offered.</p>
+                                            membership tiers and fitness services offered.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/gym5.png" class="card-img-top" alt="Gym Poster 5">
                                     <div class="card-body">
                                         <h5 class="card-title">AXYZ Muaythai Rates</h5>
                                         <p class="card-text">Striking rate card featuring Muaythai class packages for
-                                            both beginners
-                                            and advanced fighters.</p>
+                                            both beginners and advanced fighters.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card shadow-sm w-100 h-100">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
                                     <img src="img/portfolio/gym6.png" class="card-img-top" alt="Gym Poster 6">
                                     <div class="card-body">
                                         <h5 class="card-title">AXYZ Boxing Rates</h5>
                                         <p class="card-text">Clean and bold poster layout for boxing program pricing
-                                            under AXYZ Gym.
-                                        </p>
+                                            under AXYZ Gym.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- add more posters -->
-                        </div>
-                    </div>
-
-                    <!-- Videos -->
-                    <div class="tab-pane fade" id="video" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="ratio ratio-9x16">
-                                    <iframe src="https://www.youtube.com/embed/pfdeFPCtDZ8" title="Video"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <!-- add more videos -->
-                        </div>
-                    </div>
-
-                    <!-- Drone Shots -->
-                    <div class="tab-pane fade" id="drone" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="card shadow-sm">
-                                    <img src="img/drone1.png" class="card-img-top" alt="Drone Shot 1">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <img src="img/portfolio/cliks1.png" class="card-img-top" alt="Condo Poster 1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Resort Aerial View</h5>
-                                        <p class="card-text">Captured stunning aerial shots with 4K drones.</p>
+                                        <h5 class="card-title">Cliks Condo Poster</h5>
+                                        <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- add more drone shots -->
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <img src="img/portfolio/cliks2.png" class="card-img-top" alt="Condo Poster 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cliks Condo Poster</h5>
+                                        <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <img src="img/portfolio/cliks3.png" class="card-img-top" alt="Condo Poster 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cliks Condo Poster</h5>
+                                        <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <img src="img/portfolio/loc1.png" class="card-img-top"
+                                        alt="Lake O' Cali Summer Promo 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lake O' Cali Summer Promo</h5>
+                                        <p class="card-text">A vibrant summer-themed poster promoting Lake O' Cali’s
+                                            seasonal discounts and family-friendly activities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <img src="img/portfolio/loc2.png" class="card-img-top"
+                                        alt="Lake O' Cali Summer Promo 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lake O' Cali Summer Packages</h5>
+                                        <p class="card-text">A promotional poster highlighting exclusive accommodation
+                                            deals and water activity bundles at Lake O' Cali.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <img src="img/portfolio/loc3.png" class="card-img-top"
+                                        alt="Lake O' Cali Valentine Promo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lake O' Cali Valentine Promo</h5>
+                                        <p class="card-text">A romantic-themed visual promoting couple getaways,
+                                            candle-lit dinners, and spa packages for Valentine’s Day.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4" id="isotope-gallery-container">
-                <div class="col-md-4 isotope-item social estate">
-                    <div class="card">
-                        <img src="img/portfolio/cliks1.png" class="card-img-top" alt="Condo Poster 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cliks Condo Poster</h5>
-                            <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 isotope-item social estate">
-                    <div class="card">
-                        <img src="img/portfolio/cliks2.png" class="card-img-top" alt="Condo Poster 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cliks Condo Poster</h5>
-                            <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 isotope-item social estate">
-                    <div class="card">
-                        <img src="img/portfolio/cliks3.png" class="card-img-top" alt="Condo Poster 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cliks Condo Poster</h5>
-                            <p class="card-text">Flyer design for condo rentals and staycation ads.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 isotope-item social resort">
-                    <div class="card">
-                        <img src="img/portfolio/loc1.png" class="card-img-top" alt="Lake O' Cali Summer Promo 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Lake O' Cali Summer Promo</h5>
-                            <p class="card-text">A vibrant summer-themed poster promoting Lake O' Cali’s seasonal
-                                discounts and family-friendly activities.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 isotope-item social resort">
-                    <div class="card">
-                        <img src="img/portfolio/loc2.png" class="card-img-top" alt="Lake O' Cali Summer Promo 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Lake O' Cali Summer Packages</h5>
-                            <p class="card-text">A promotional poster highlighting exclusive accommodation deals and
-                                water activity bundles at Lake O' Cali.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 isotope-item social resort">
-                    <div class="card">
-                        <img src="img/portfolio/loc3.png" class="card-img-top" alt="Lake O' Cali Valentine Promo">
-                        <div class="card-body">
-                            <h5 class="card-title">Lake O' Cali Valentine Promo</h5>
-                            <p class="card-text">A romantic-themed visual promoting couple getaways, candle-lit dinners,
-                                and spa packages for Valentine’s Day.</p>
-                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
 
-                <div class="col-md-4 isotope-item social drone">
-                    <div class="card">
-                        <div class="video-wrapper"
-                            style="position: relative; width: 100%; padding-bottom: 177.78%; height: 0; overflow: hidden;">
-                            <iframe src="https://www.youtube.com/embed/pfdeFPCtDZ8" title="YouTube Shorts"
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Drone Shot 1</h5>
-                            <p class="card-text">Lake O' Cali</p>
+                <div class="tab-pane fade" id="video" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6">
+                            <div class="ratio ratio-9x16">
+                                <iframe src="https://www.youtube.com/embed/pfdeFPCtDZ8" title="Video"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="tab-pane fade" id="drone" role="tabpanel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <div class="video-wrapper"
+                                        style="position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden;">
+                                        <iframe src="https://www.youtube.com/embed/pfdeFPCtDZ8" title="YouTube Shorts"
+                                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Drone Shot 1</h5>
+                                        <p class="card-text">Lake O' Cali</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card shadow-sm h-100">
+                                    <div class="video-wrapper"
+                                        style="position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden;">
+                                        <iframe src="https://www.youtube.com/embed/pfdeFPCtDZ8" title="YouTube Shorts"
+                                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Drone Shot 2</h5>
+                                        <p class="card-text">Mountain View</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -461,24 +436,30 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center"
                     data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
-                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
-                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore
+                        sed
+                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at
+                        rebum
                         justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
                 <div class="testimonial-item text-center"
                     data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
-                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
-                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore
+                        sed
+                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at
+                        rebum
                         justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
                 <div class="testimonial-item text-center"
                     data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
-                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
-                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore
+                        sed
+                        sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at
+                        rebum
                         justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
@@ -516,52 +497,35 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        $(window).on('load', function () {
-            var $grid = $('#isotope-gallery-container').isotope({
-                itemSelector: '.isotope-item',
-                layoutMode: 'fitRows'
-            });
-
-            // Set initial filter to 'web' so only web items are shown by default
-            $grid.isotope({ filter: '.web' });
-            // Add 'active' class to the 'Web Development / UI' button initially
-            $('.filter button[data-filter=".web"]').addClass('active');
-
-
-            // Event listener for main filter buttons (Web Dev, Posters/Graphic Designs dropdown toggle)
-            $('.filter button').on('click', function () {
-                $('.filter button').removeClass('active'); // Deactivate all main buttons
-                $('.filter-sub').removeClass('active'); // Deactivate all dropdown sub-items
-                $(this).addClass('active'); // Activate the clicked main button
-
-                var filterValue = $(this).attr('data-filter');
-                if (filterValue) { // If it's a direct filter button
-                    $grid.isotope({ filter: filterValue });
-                } else { // If it's the dropdown toggle, filter to all social by default
-                    $grid.isotope({ filter: '.social' });
-                    // Optionally, you might want to highlight "All Designs" or none within dropdown here
-                    $('.filter-sub[data-filter=".social"]').addClass('active');
-                }
-            });
-
-            // Event listener for dropdown sub-filter items
-            $('.dropdown-menu .filter-sub').on('click', function (e) {
-                e.preventDefault(); // Prevent default link behavior
-
-                // Deactivate all main filter buttons and all dropdown sub-items
-                $('.filter button').removeClass('active');
-                $('.filter-sub').removeClass('active');
-
-                // Activate the clicked dropdown item
-                $(this).addClass('active');
-
-                // Activate the parent dropdown toggle button
-                $(this).closest('.dropdown').find('.dropdown-toggle').addClass('active');
-
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({ filter: filterValue });
+        document.addEventListener('DOMContentLoaded', function () {
+            const swipers = document.querySelectorAll('.mySwiper');
+            swipers.forEach(swiperEl => {
+                new Swiper(swiperEl, {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                    },
+                });
             });
         });
     </script>

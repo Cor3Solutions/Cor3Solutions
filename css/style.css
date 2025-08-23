@@ -577,37 +577,46 @@ h6,
   transform: scale(1.05);
 }
 
-.filter .btn-outline-primary {
-  color: #133778; /* Default text color */
-  border-color: #133778; /* Default border color */
-  background-color: transparent; /* Default background */
-  transition: all 0.3s ease; /* Smooth transition for hover/active */
+.swiper-slide {
+  height: auto;
 }
 
-.filter .btn-outline-primary:hover {
-  color: #ffffff; /* Text color on hover */
-  background-color: #133778; /* Background on hover */
+.card {
+  height: 100%;
 }
 
-.filter .btn-outline-primary.active {
-  color: #ffffff; /* Text color when active */
-  background-color: #133778; /* Background when active */
-  border-color: #133778; /* Border color when active */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
 }
 
-/* Styles for dropdown menu items */
-.dropdown-menu .filter-sub {
-  color: #133778; /* Default text color for dropdown items */
-  background-color: #ffffff; /* Default background for dropdown items */
+.gallery-1 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.swiper-slide .col-md-4 {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.nav-link {
   transition: all 0.3s ease;
 }
 
-.dropdown-menu .filter-sub:hover {
-  color: #ffffff; /* Text color on hover */
-  background-color: #312a5a; /* Background on hover (using accent color) */
+/* Adjusting for proper card display with spacing */
+.swiper-wrapper {
+  padding-bottom: 50px;
 }
 
-.dropdown-menu .filter-sub.active {
-  color: #ffffff; /* Text color when active */
-  background-color: #133778; /* Background when active */
+/* The key change for non-stretched images */
+#poster .card-img-top {
+  width: 100%;
+  height: 300px; /* Adjust this to a size that works for you */
+  object-fit: contain;
+}
+
+/* A little extra space for the contain effect to be visible */
+#poster .card-body {
+  margin-top: auto;
 }

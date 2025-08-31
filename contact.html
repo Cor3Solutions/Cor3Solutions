@@ -180,42 +180,69 @@
             </div>
 
             <div class="row g-5 align-items-center">
-                <!-- Contact Form -->
-                <div class="col-md-6">
-                    <form onsubmit="return false;">
-                        <div class="mb-3">
-                            <label for="userName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="userName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="userEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="userEmail" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="userMsg" class="form-label">Message</label>
-                            <textarea class="form-control" id="userMsg" rows="4" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="button" onclick="copyAndOpen()" class="btn btn-primary px-4 py-2">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
+
+                <!-- Video FIRST on mobile, SECOND on desktop -->
+                <div class="col-md-6 text-center order-1 order-md-2">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/BR-VajxoCaQ?autoplay=1&mute=1&loop=1&playlist=BR-VajxoCaQ&controls=0&modestbranding=1&showinfo=0&rel=0"
+                            title="YouTube video player" frameborder="0" allow="autoplay; fullscreen; encrypted-media"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
                 </div>
 
-                <!-- Image -->
-                <div class="col-md-6 text-center">
-                    <img src="img/COR3LOGO.png" alt="COR3 Solutions Contact" class="img-fluid rounded"
-                        style="max-height: 350px;">
+                <!-- Contact Form SECOND on mobile, FIRST on desktop -->
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="card shadow-lg border-0 rounded-3">
+                        <div class="card-body p-4">
+                            <h4 class="text-center text-primary mb-4">Get in Touch</h4>
+                            <form onsubmit="return false;">
+                                <!-- Name -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="userName" placeholder="Your Name"
+                                        required>
+                                    <label for="userName">Name</label>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="userEmail"
+                                        placeholder="name@example.com" required>
+                                    <label for="userEmail">Email</label>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="userMsg" placeholder="Write your message"
+                                        style="height: 150px" required></textarea>
+                                    <label for="userMsg">Message</label>
+                                </div>
+
+                                <!-- Buttons -->
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <button type="button" onclick="copyAndOpen()"
+                                        class="btn btn-primary btn-lg rounded-pill flex-fill">
+                                        Send via Messenger
+                                    </button>
+                                    <button type="button" onclick="sendEmail()"
+                                        class="btn btn-outline-primary btn-lg rounded-pill flex-fill">
+                                        Send via Email
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
     <!-- Contact End -->
 
-
     <script>
-        function copyAndOpen(target) {
+        function copyAndOpen() {
             const name = document.getElementById('userName').value.trim();
             const email = document.getElementById('userEmail').value.trim();
             const msg = document.getElementById('userMsg').value.trim();
@@ -238,7 +265,6 @@
                     text: 'Your message has been copied. Paste it into Messenger in the next tab.',
                     confirmButtonText: 'Open Messenger'
                 }).then(() => {
-                    // Always open the CLIKS Staycation Page
                     window.open('https://m.me/Cor3Solutions', '_blank');
                 });
             }).catch(() => {
@@ -248,10 +274,32 @@
                     text: 'Your browser blocked clipboard access. Please copy manually.',
                 });
             });
+        }
 
+        function sendEmail() {
+            const name = document.getElementById('userName').value.trim();
+            const email = document.getElementById('userEmail').value.trim();
+            const msg = document.getElementById('userMsg').value.trim();
+
+            if (!name || !email || !msg) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Incomplete Form',
+                    text: 'Please fill out all fields before sending.',
+                });
+                return;
+            }
+
+            const subject = encodeURIComponent("New Inquiry from COR3 Solutions Website");
+            const body = encodeURIComponent(`Hi, my name is ${name} (${email}).\n\n${msg}`);
+
+            // Change email below to your business email
+            const mailtoLink = `mailto:cor3solutions@gmail.com?subject=${subject}&body=${body}`;
+
+            window.location.href = mailtoLink;
         }
     </script>
-    <!-- Contact End -->
+
 
     <div class="container-fluid footer pt-2 px-0 wow fadeIn" data-wow-delay="0.1s"
         style="background-color: #133778; color: white;">

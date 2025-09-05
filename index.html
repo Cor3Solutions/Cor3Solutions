@@ -162,11 +162,11 @@
     <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="position-relative" style="overflow: hidden;">
             <!-- Desktop Image -->
-            <img src="img/carousel.png" alt="Hero Image" class="img-fluid w-100 d-none d-md-block"
+            <img src="img/index/carousel.png" alt="Hero Image" class="img-fluid w-100 d-none d-md-block"
                 style="object-fit: cover; height: 100vh;">
 
             <!-- Mobile Image -->
-            <img src="img/Mai website.png" alt="Hero Image" class="img-fluid w-100 d-block d-md-none"
+            <img src="img/index/Mai website.png" alt="Hero Image" class="img-fluid w-100 d-block d-md-none"
                 style="object-fit: cover; height: 100vh;">
 
 
@@ -176,7 +176,7 @@
                     <div class="row align-items-center h-100">
                         <div class="col-12 col-lg-8 text-white">
                             <h1 class="display-1 text-white mb-4">Smart Solutions for Modern Businesses.</h1>
-                            <p class="fs-5 fw-medium mb-4">We help our clients along with their companies solve real
+                            <p class="fs-5 fw-medium mb-4">We help our clients and their companies solve real
                                 problems with innovative strategies and creative execution.</p>
                             <a href="service.html" class="btn btn-primary py-3 px-5">Read More</a>
                         </div>
@@ -194,8 +194,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="img/about-1.jpg" alt="">
-                        <img class="img-fluid" src="img/about-2.jpg" alt="">
+                        <img class="img-fluid" src="img/index/about-1.png" alt="">
+                        <img class="img-fluid" src="img/index/about-2.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -227,16 +227,16 @@
     <!-- Facts Start -->
     <div class="container-xxl py-5">
         <div class="container pt-5">
-            <div class="row g-4">
+            <div class="row g-4 align-items-stretch">
 
                 <!-- Vision -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="fact-icon mb-4">
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="fact-item text-center flex-fill p-4">
+                        <div class="fact-icon">
                             <img src="img/icons/icon1.png" alt="Vision Icon">
                         </div>
                         <h3 class="mb-3">Our Vision</h3>
-                        <p class="mb-0">
+                        <p>
                             Artificial intelligence and machine learning are inevitable. We continuously adapt, change,
                             and stay resilient. Setting clear goals while embracing the future of innovation.
                         </p>
@@ -244,13 +244,13 @@
                 </div>
 
                 <!-- Mission -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="fact-icon mb-4">
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="fact-item text-center flex-fill p-4">
+                        <div class="fact-icon">
                             <img src="img/icons/icon2.png" alt="Mission Icon">
                         </div>
                         <h3 class="mb-3">Our Mission</h3>
-                        <p class="mb-0">
+                        <p>
                             We push for consistent progress, not just meeting our clients’ goals, but striving to
                             exceed them with purpose, passion, and clarity in every project.
                         </p>
@@ -258,24 +258,25 @@
                 </div>
 
                 <!-- Core Values -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="fact-icon mb-4">
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="fact-item text-center flex-fill p-4">
+                        <div class="fact-icon">
                             <img src="img/icons/icon3.png" alt="Core Values Icon">
                         </div>
                         <h3 class="mb-3">Our Core Values</h3>
-                        <p class="mb-0">
+                        <p>
                             Integrity – Innovation – Accountability – People Development<br><br>
                             What sets us apart? We embody these values with both our clients and colleagues.
                             Consistently, equitably, and with intent.
                         </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    </div>
     <!-- Facts End -->
+
 
     <!-- Clients Start -->
     <div class="container-xxl py-5 bg-white">
@@ -524,8 +525,7 @@
         }
     </style>
 
- 
-    <!-- Service Start -->
+    <!-- Services Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -533,11 +533,9 @@
                 <h1 class="display-5 mb-4">Creative, Digital, and Content-Driven Solutions</h1>
             </div>
             <div class="row g-4">
-
-                <!-- Web Development -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-1.png" alt="">
+                    <div class="service-item d-block position-relative text-center h-100 web-dev-bg"
+                        data-bs-toggle="modal" data-bs-target="#webDevModal" style="cursor: pointer;">
                         <div class="service-text p-5">
                             <img class="mb-4" src="img/icons/icon4.png" alt="Icon">
                             <h3 class="mb-3">Web Development</h3>
@@ -547,36 +545,21 @@
                     </div>
                 </div>
 
-                <!-- Social Media Management -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-2.png" alt="">
+                    <div class="service-item d-block position-relative text-center h-100 social-media-bg"
+                        data-bs-toggle="modal" data-bs-target="#socialMediaModal" style="cursor: pointer;">
                         <div class="service-text p-5">
                             <img class="mb-4" src="img/icons/icon5.png" alt="Icon">
-                            <h3 class="mb-3">Social Media Management</h3>
-                            <p class="mb-4">We handle content, strategy, and community — ensuring your brand connects
-                                and converts where it matters.</p>
+                            <h3 class="mb-3">Social Media & UGC</h3>
+                            <p class="mb-4">From strategy to authentic content, we manage your social presence and craft
+                                UGC that drives engagement and conversions.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- UGC Creation -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-3.png" alt="">
-                        <div class="service-text p-5">
-                            <img class="mb-4" src="img/icons/icon6.png" alt="Icon">
-                            <h3 class="mb-3">UGC Content</h3>
-                            <p class="mb-4">Authentic, relatable user-generated content that drives engagement, trust,
-                                and conversions across digital platforms.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Drone Shots & Visuals -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-4.png" alt="">
+                    <div class="service-item d-block position-relative text-center h-100 drone-visuals-bg"
+                        data-bs-toggle="modal" data-bs-target="#droneModal" style="cursor: pointer;">
                         <div class="service-text p-5">
                             <img class="mb-4" src="img/icons/icon7.png" alt="Icon">
                             <h3 class="mb-3">Drone Visuals</h3>
@@ -584,12 +567,23 @@
                                 perspective to your story.</p>
                         </div>
                     </div>
-                </div> 
+                </div>
 
-                <!-- Administrative Tasks -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-6.png" alt="">
+                    <div class="service-item d-block position-relative text-center h-100 funnels-analytics-bg"
+                        data-bs-toggle="modal" data-bs-target="#funnelsModal" style="cursor: pointer;">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon9.png" alt="Icon">
+                            <h3 class="mb-3">Funnels & Analytics</h3>
+                            <p class="mb-4">We design conversion-focused funnels and back them with analytics to track
+                                performance and guide smarter decisions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-block position-relative text-center h-100 administrative-bg"
+                        data-bs-toggle="modal" data-bs-target="#administrativeModal" style="cursor: pointer;">
                         <div class="service-text p-5">
                             <img class="mb-4" src="img/icons/icon11.png" alt="Icon">
                             <h3 class="mb-3">Administrative Tasks</h3>
@@ -599,183 +593,216 @@
                     </div>
                 </div>
 
-                <!-- Funnel Designing -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-7.png" alt="">
-                        <div class="service-text p-5">
-                            <img class="mb-4" src="img/icons/icon9.png" alt="Icon">
-                            <h3 class="mb-3">Funnel Designing</h3>
-                            <p class="mb-4">We create conversion-optimized funnels tailored to your customer journey —
-                                from lead magnet to final sale.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Analytics & Reporting -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-8.png" alt="">
-                        <div class="service-text p-5">
-                            <img class="mb-4" src="img/icons/icon8.png" alt="Icon">
-                            <h3 class="mb-3">Analytics & Reporting</h3>
-                            <p class="mb-4">Gain insights from detailed analytics dashboards and customized performance
-                                reports to help guide your business decisions.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Custom Projects -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-6.png" alt="">
+                    <div class="service-item d-block position-relative text-center h-100 custom-projects-bg"
+                        data-bs-toggle="modal" data-bs-target="#customProjectsModal" style="cursor: pointer;">
                         <div class="service-text p-5">
                             <img class="mb-4" src="img/icons/icon10.png" alt="Icon">
                             <h3 class="mb-3">Custom Projects</h3>
                             <p class="mb-4">Got a specific challenge? We tailor innovative solutions that work — no
                                 templates, no guesswork.</p>
-                            <a class="btn" href="service.html"><i class="fa fa-plus text-primary me-3"></i>Explore
-                                More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
 
-    <!-- Project Start -->
-    <div class="container-xxl project py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Our Projects</h4>
-                <h1 class="display-5 mb-4">See What We've Built, Captured, and Launched</h1>
-            </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex flex-column w-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h3 class="m-0">01. Web Development</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h3 class="m-0">02. Social Media</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h3 class="m-0">03. Drone & UGC</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h3 class="m-0">04. General VA / Admin Systems</h3>
-                        </button>
-                    </div>
+    <div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="webDevModalLabel">Web Development</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <!-- Tab 1: Web Development -->
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-1.png"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">Transforming Online Presence</h1>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Responsive Design – mobile-first
-                                        websites that adapt to any screen.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Custom Features – tailored functions
-                                        like booking systems, logins, and more.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Figma UI Prototypes – design mockups
-                                        for seamless development flow.</p>
-                                </div>
-                            </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="img/index/service-1.png" alt="Web Development image">
                         </div>
-
-                        <!-- Tab 2: Social Media -->
-                        <div class="tab-pane fade" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-2.png"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">Connecting with Audiences</h1>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Content Calendars – organized
-                                        posting schedules for consistency.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Reels & Short-Form Videos – engaging
-                                        visual content for TikTok, FB & IG.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Analytics Reports – insights to
-                                        track performance and growth.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Platform Management – Facebook
-                                        Pages, Instagram, TikTok & LinkedIn.</p>
-                                </div>
-                            </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-3">Building Your Digital Foundation</h2>
+                            <p><i class="fa fa-check text-primary me-3"></i>Responsive Design – seamless experience on
+                                all devices.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>SEO Optimization – built to rank high on
+                                search engines.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>E-commerce Solutions – powerful online
+                                stores that convert.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>CMS Integration – easy-to-manage content
+                                with platforms like WordPress.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Website Maintenance – secure and up-to-date
+                                performance.</p>
                         </div>
-
-                        <!-- Tab 3: Drone & UGC -->
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.png"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">Capturing Stories from Above</h1>
-                                    <!-- Drone & UGC -->
-                                    <p><i class="fa fa-check text-primary me-3"></i>Drone Videography – high-quality
-                                        aerial shots for events & locations.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Authentic Testimonials – real user
-                                        stories to build credibility.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Visual Content Creation – raw &
-                                        edited content ready for socials.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Licensed Drone Pilots – operating
-                                        within PH airspace regulations.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tab 4: Admin Systems -->
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-6.png"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">Efficiency in Every Click</h1>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Custom Dashboards – organized
-                                        platforms to streamline daily operations.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Email & Chat Support – professional
-                                        communication with clients or customers.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Appointment Setting – manage
-                                        calendars and confirm meetings efficiently.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Data Entry & Reports – accurate
-                                        documentation and performance tracking.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>CRM Management – update leads,
-                                        contacts, and track client engagement.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Coordination – assist in
-                                        organizing tasks and timelines.</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Tabs -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Project End -->
+
+    <div class="modal fade" id="socialMediaModal" tabindex="-1" aria-labelledby="socialMediaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="socialMediaModalLabel">Social Media & UGC</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="img/index/service-2.png" alt="Social Media image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-3">Authentic Connection, Real Engagement</h2>
+                            <p><i class="fa fa-check text-primary me-3"></i>Content Strategy & Calendars – planned
+                                content for consistent posting.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>User-Generated Content (UGC) – leverage your
+                                community's voice.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Community Management – actively engage with
+                                your audience.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Social Media Analytics – track growth and
+                                refine your strategy.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Campaign Management – impactful, targeted
+                                social campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="droneModal" tabindex="-1" aria-labelledby="droneModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="droneModalLabel">Drone Visuals</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="img/index/service-4.png" alt="Drone Visuals image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-3">Elevate Your Perspective</h2>
+                            <p><i class="fa fa-check text-primary me-3"></i>Cinematic Videos – dynamic shots for
+                                stunning storytelling.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>High-Resolution Photos – capture
+                                breathtaking aerial views.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Licensed & Insured Pilots – professional and
+                                safe operations.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Real Estate & Events – unique angles for
+                                properties and events.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Video Editing & Post-Production – polished
+                                final products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="funnelsModal" tabindex="-1" aria-labelledby="funnelsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="funnelsModalLabel">Funnels & Analytics</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="img/index/service-7.png"
+                                alt="Funnels and Analytics image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-3">Data-Driven Growth</h2>
+                            <p><i class="fa fa-check text-primary me-3"></i>Conversion Funnel Design – guide visitors to
+                                become customers.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Analytics Setup & Tracking – understand user
+                                behavior.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>A/B Testing – optimize pages for maximum
+                                performance.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Performance Reporting – actionable insights
+                                for your business.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Retargeting Strategy – bring back potential
+                                customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="administrativeModal" tabindex="-1" aria-labelledby="administrativeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="administrativeModalLabel">Administrative Tasks</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="img/index/service-6.png"
+                                alt="Administrative tasks image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-3">Efficiency in Every Click</h2>
+                            <p><i class="fa fa-check text-primary me-3"></i>Custom Dashboards – organized platforms to
+                                streamline daily operations.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Email & Chat Support – professional
+                                communication with clients or customers.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Appointment Setting – manage calendars and
+                                confirm meetings efficiently.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Data Entry & Reports – accurate
+                                documentation and performance tracking.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>CRM Management – update leads, contacts, and
+                                track client engagement.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Project Coordination – assist in organizing
+                                tasks and timelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="customProjectsModal" tabindex="-1" aria-labelledby="customProjectsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="customProjectsModalLabel">Custom Projects</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="img/index/service-6.png" alt="Custom Projects image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-3">Tailored Solutions for Your Unique Needs</h2>
+                            <p><i class="fa fa-check text-primary me-3"></i>Bespoke Strategy – we start with your unique
+                                goals, not a generic plan.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Flexible Services – combine our skills to
+                                meet your specific needs.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Consultation & Discovery – we listen to your
+                                challenges and find the right fit.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Scalable Solutions – projects that grow with
+                                your business.</p>
+                            <p><i class="fa fa-check text-primary me-3"></i>Seamless Execution – a dedicated project
+                                manager to ensure success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="service.html" class="btn btn-primary w-100">Explore All Services</a>
+                </div>
+            </div>
+        </div>
+    </div> 
 
     <!-- Team Start  
     <div class="container-xxl py-5">

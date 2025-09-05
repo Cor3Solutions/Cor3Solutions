@@ -189,7 +189,7 @@ h6,
 
 .page-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/carousel-1.png) center center no-repeat;
+    url(../img/index/carousel.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -205,31 +205,48 @@ h6,
   text-transform: uppercase;
 }
 
-/*** Facts ***/
-.fact-item .fact-icon {
-  width: 120px;
-  height: 120px;
-  margin-top: -60px;
-  margin-bottom: 1.5rem;
-  display: inline-flex;
+.fact-item {
+  background: linear-gradient(135deg, #2e2657, #4483cc);
+  color: #fff;
+  border-radius: 15px;
+  padding: 60px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fact-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*** Circle Icon ***/
+.fact-icon {
+  width: 100px;
+  height: 100px;
+  margin: -80px auto 20px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  border-radius: 120px;
-  transition: 0.5s;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.fact-icon img {
+  max-width: 55%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .fact-item:hover .fact-icon {
-  background: var(--dark);
+  background: #9d90e2;
+  transform: scale(1.08);
 }
 
-.fact-item .fact-icon i {
-  color: var(--primary);
-  transition: 0.5;
-}
-
-.fact-item:hover .fact-icon i {
-  color: #ffffff;
+.fact-item:hover .fact-icon img {
+  transform: scale(1.12);
 }
 
 /*** About & Feature ***/
@@ -266,6 +283,19 @@ h6,
 }
 
 /*** Service ***/
+.service-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* makes all equal height inside their col */
+}
+
+.service-item .service-text {
+  flex-grow: 1; /* fills remaining space so all cards balance */
+  background: linear-gradient(135deg, #2e2657, #4483cc);
+  color: #fff;
+  transition: 0.5s;
+}
+
 .service-item .bg-img {
   position: absolute;
   width: 100%;
@@ -274,18 +304,12 @@ h6,
   z-index: -1;
 }
 
-.service-item .service-text {
-  background: linear-gradient(135deg, #2e2657, #4483cc); /* Gradient */
-  color: #fff; /* white text for contrast */
-  transition: 0.5s;
-}
-
 .service-item:hover .service-text {
-  background: rgba(0, 0, 0, 0.7); /* hover effect */
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .service-item * {
-  transition: 0.5s; /* fixed missing 's' */
+  transition: 0.5s;
 }
 
 .service-item:hover * {
@@ -297,6 +321,7 @@ h6,
   height: 40px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   color: var(--dark);
   background: #ffffff;
   white-space: nowrap;
@@ -307,7 +332,30 @@ h6,
 .service-item:hover .btn {
   width: 140px;
 }
+.service-item .service-text {
+    /* Retain original properties */
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+}
 
+.service-item .service-text .mb-4 {
+    /* New properties to fix the icon */
+    align-self: center; /* Prevents the icon from stretching */
+    flex-shrink: 0; /* Ensures the icon maintains its size */
+}
+
+.service-item .service-text h3, 
+.service-item .service-text p {
+    /* Allow the text to fill the space without stretching */
+    flex-grow: 1; /* Allows text to take up available space */
+    flex-shrink: 1; /* Allows text to wrap and shrink if necessary */
+    width: 100%; /* Ensures the text takes full width */
+}
 /*** Project ***/
 .project .nav .nav-link {
   background: var(--light);

@@ -1,0 +1,343 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net; font-src https://cdn.jsdelivr.net; img-src 'self' data: blob:; connect-src 'self' https://formsubmit.co;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Cor3 Solutions</title>
+  <meta name="description" content="Privacy Policy for Cor3 Solutions — how we collect, use, and protect your personal information under the Philippine Data Privacy Act of 2012." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Page-specific styles ── */
+    .policy-hero {
+      padding: calc(var(--nav-h) + 3rem) 0 3.5rem;
+      background: var(--c-surface);
+      border-bottom: 1px solid var(--c-border);
+      position: relative; overflow: hidden;
+    }
+    .policy-hero::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 0;
+      background-image: radial-gradient(circle, var(--dot-grid) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .policy-hero::after {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: var(--grad);
+    }
+    .policy-hero .container { position: relative; z-index: 1; }
+
+    .policy-eyebrow {
+      font-family: var(--font-mono); font-size: 0.62rem;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      background: var(--grad);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      display: inline-flex; align-items: center; gap: 0.55rem; margin-bottom: 1rem;
+    }
+    .policy-eyebrow::before { content: ''; display: block; width: 20px; height: 1px; background: var(--grad); }
+
+    .policy-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700; letter-spacing: 0.02em;
+      color: var(--c-text); line-height: 1.05; margin-bottom: 0.75rem;
+    }
+    .policy-meta {
+      font-family: var(--font-mono); font-size: 0.62rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--c-muted); margin-top: 1.25rem;
+    }
+
+    .policy-body { padding: 4rem 0 5rem; }
+
+    .policy-card {
+      background: var(--c-card);
+      border: 1px solid var(--c-border);
+      border-radius: 14px; padding: 2.25rem 2.5rem;
+      margin-bottom: 1.25rem;
+      position: relative; overflow: hidden;
+    }
+    .policy-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 2px;
+      background: var(--grad);
+    }
+    .policy-num {
+      font-family: var(--font-mono); font-size: 0.57rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      background: var(--grad);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      display: block; margin-bottom: 0.4rem;
+    }
+    .policy-card h2 {
+      font-family: var(--font-display); font-size: 1.35rem;
+      font-weight: 700; letter-spacing: 0.03em;
+      color: var(--c-text); margin-bottom: 1rem;
+    }
+    .policy-card p, .policy-card li {
+      font-size: 0.88rem; color: var(--c-muted); line-height: 1.82;
+    }
+    .policy-card ul { padding-left: 1.3rem; margin-bottom: 0.75rem; }
+    .policy-card li { margin-bottom: 0.35rem; }
+    .policy-card a { color: var(--c-blue); text-decoration: underline; text-underline-offset: 3px; }
+    .policy-card a:hover { color: var(--c-purple); }
+    .policy-card strong { color: var(--c-text); font-weight: 600; }
+
+    .policy-cta-box {
+      background: linear-gradient(135deg, rgba(37,99,196,0.06), rgba(107,63,160,0.06));
+      border: 1px solid var(--c-border2); border-radius: 14px;
+      padding: 2.25rem 2.5rem; margin-top: 0.5rem;
+    }
+    .policy-cta-box h3 {
+      font-family: var(--font-display); font-size: 1.3rem;
+      font-weight: 700; color: var(--c-text); margin-bottom: 0.5rem;
+    }
+    .policy-cta-box p { font-size: 0.88rem; color: var(--c-muted); margin-bottom: 1.25rem; line-height: 1.75; }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Cor3 Solutions" />
+      <span class="nav-logo-text">COR3 SOLUTIONS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#process">Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item ms-1"><a class="nav-link nav-cta" href="index.html#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<div class="policy-hero">
+  <div class="container">
+    <div class="breadcrumb-inner mb-4">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Privacy Policy</span>
+    </div>
+    <span class="policy-eyebrow">Legal</span>
+    <h1 class="policy-title">Privacy <span class="text-accent">Policy</span></h1>
+    <p style="font-size:0.9rem;color:var(--c-muted);max-width:560px;line-height:1.78;">
+      This policy explains how Cor3 Solutions collects, uses, stores, and protects your personal information in compliance with the Philippine <strong>Data Privacy Act of 2012 (R.A. 10173)</strong>.
+    </p>
+    <p class="policy-meta">Effective: January 1, 2025 &nbsp;·&nbsp; Last Updated: February 2025</p>
+  </div>
+</div>
+
+<!-- ══ BODY ══ -->
+<div class="policy-body">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-8">
+
+        <!-- 01 Who We Are -->
+        <div class="policy-card">
+          <span class="policy-num">Section 01</span>
+          <h2>Who We Are</h2>
+          <p><strong>Cor3 Solutions</strong> ("we", "us", "our") is a Philippines-based digital agency providing web development &amp; machine learning, admin task management systems, social media management, and UGC content services.</p>
+          <p>For all privacy-related matters, contact our Data Protection Officer at:<br>
+            📧 <a href="mailto:Cor3Solutions@gmail.com">Cor3Solutions@gmail.com</a> &nbsp;·&nbsp;
+            📞 <a href="tel:+639956605675">+63 995 660 5675</a>
+          </p>
+        </div>
+
+        <!-- 02 Information We Collect -->
+        <div class="policy-card">
+          <span class="policy-num">Section 02</span>
+          <h2>Information We Collect</h2>
+          <p>We only collect information that is necessary to respond to your inquiries and deliver our services.</p>
+          <p><strong>Information you provide directly:</strong></p>
+          <ul>
+            <li>Full name, email address, and message content via the contact form</li>
+            <li>Service interest and project details you share with us</li>
+            <li>Communications via email, phone, or social media</li>
+          </ul>
+          <p><strong>Technical data collected automatically (minimal):</strong></p>
+          <ul>
+            <li>Browser type and version</li>
+            <li>General geographic region (country level)</li>
+            <li>Pages visited and approximate session duration</li>
+            <li>Referring URL</li>
+          </ul>
+          <p><strong>We do not</strong> use tracking cookies, advertising pixels, third-party analytics (e.g. Google Analytics), or collect any sensitive personal data (financial details, government IDs, health information).</p>
+        </div>
+
+        <!-- 03 How We Use Your Data -->
+        <div class="policy-card">
+          <span class="policy-num">Section 03</span>
+          <h2>How We Use Your Information</h2>
+          <p>Your data is used solely to:</p>
+          <ul>
+            <li>Respond to your inquiries and project quote requests</li>
+            <li>Deliver and manage the services you engage us for</li>
+            <li>Send service-related communications (project updates, invoices)</li>
+            <li>Improve our website and service quality</li>
+          </ul>
+          <p>We will <strong>never</strong> sell, rent, trade, or share your personal data with third parties for marketing purposes.</p>
+        </div>
+
+        <!-- 04 Data Sharing -->
+        <div class="policy-card">
+          <span class="policy-num">Section 04</span>
+          <h2>Data Sharing &amp; Third Parties</h2>
+          <p>We do not share your personal data except in these limited circumstances:</p>
+          <ul>
+            <li><strong>Service providers:</strong> Trusted tools used to process contact form submissions (e.g. FormSubmit). These providers act only on our behalf under confidentiality obligations.</li>
+            <li><strong>Legal compliance:</strong> We may disclose data if required by Philippine law or a valid legal order.</li>
+            <li><strong>Business transfer:</strong> In the unlikely event of a merger or acquisition, data may transfer as part of that transaction with advance notice to you.</li>
+          </ul>
+        </div>
+
+        <!-- 05 Data Retention -->
+        <div class="policy-card">
+          <span class="policy-num">Section 05</span>
+          <h2>Data Retention</h2>
+          <p>We retain contact form submissions and client communication records for up to <strong>3 years</strong> after your last interaction with us, or as required by applicable law.</p>
+          <p>You may request deletion of your data at any time. We will action all deletion requests within <strong>30 days</strong>, subject to any legal retention obligations.</p>
+        </div>
+
+        <!-- 06 Your Rights (DPA 2012) -->
+        <div class="policy-card">
+          <span class="policy-num">Section 06</span>
+          <h2>Your Rights Under R.A. 10173 (Data Privacy Act of 2012)</h2>
+          <p>As a data subject, you have the right to:</p>
+          <ul>
+            <li><strong>Be informed</strong> — know what personal data we hold about you and how it is processed</li>
+            <li><strong>Access</strong> — request a copy of your personal data we hold</li>
+            <li><strong>Rectification</strong> — request correction of inaccurate or incomplete data</li>
+            <li><strong>Erasure / blocking</strong> — request deletion or suspension of processing your data</li>
+            <li><strong>Object</strong> — object to processing of your personal data under certain conditions</li>
+            <li><strong>Data portability</strong> — receive your data in a structured, commonly used, machine-readable format</li>
+            <li><strong>Damages</strong> — be indemnified for damages sustained due to inaccurate, incomplete, or unauthorised use of your data</li>
+            <li><strong>File a complaint</strong> — lodge a complaint with the <a href="https://www.privacy.gov.ph" target="_blank" rel="noopener noreferrer">National Privacy Commission (NPC)</a></li>
+          </ul>
+          <p>To exercise any of these rights, email us at <a href="mailto:Cor3Solutions@gmail.com">Cor3Solutions@gmail.com</a>. We will respond within <strong>15 business days</strong>.</p>
+        </div>
+
+        <!-- 07 Data Security -->
+        <div class="policy-card">
+          <span class="policy-num">Section 07</span>
+          <h2>Data Security</h2>
+          <p>We implement the following technical and organisational safeguards to protect your data:</p>
+          <ul>
+            <li><strong>HTTPS</strong> — all pages served over TLS encryption</li>
+            <li><strong>Content Security Policy (CSP)</strong> — restricts which scripts and resources may load</li>
+            <li><strong>URL allowlist validation</strong> — all navigations checked against an explicit allowlist before redirect</li>
+            <li><strong>Input sanitisation</strong> — all user-supplied text escaped before DOM insertion</li>
+            <li><strong>Form validation</strong> — client-side checks on all form fields before submission</li>
+            <li><strong>noopener enforcement</strong> — all external links opened in new tabs include <code>rel="noopener noreferrer"</code></li>
+            <li><strong>Limited access</strong> — data access restricted to authorised personnel only</li>
+          </ul>
+          <p>No method of transmission over the internet is 100% secure. We cannot guarantee absolute security, but we are committed to protecting your information using industry best practices.</p>
+        </div>
+
+        <!-- 08 External Links -->
+        <div class="policy-card">
+          <span class="policy-num">Section 08</span>
+          <h2>External Links</h2>
+          <p>Our website may contain links to external platforms (e.g. social media profiles). We are not responsible for the privacy practices of those sites and recommend reviewing their own privacy policies.</p>
+          <p>All external links on this site are validated against an allowlist before any browser redirect occurs. If you encounter an unexpected redirect, please report it to us immediately.</p>
+        </div>
+
+        <!-- 09 Children's Privacy -->
+        <div class="policy-card">
+          <span class="policy-num">Section 09</span>
+          <h2>Children's Privacy</h2>
+          <p>Our services are not directed at individuals under the age of 18. We do not knowingly collect personal data from minors. If you believe we have inadvertently received data from a minor, please contact us and we will delete it promptly.</p>
+        </div>
+
+        <!-- 10 Changes to This Policy -->
+        <div class="policy-card">
+          <span class="policy-num">Section 10</span>
+          <h2>Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of our website after any update constitutes acceptance of the revised policy.</p>
+        </div>
+
+        <!-- Contact CTA box -->
+        <div class="policy-cta-box">
+          <h3>Questions About This Policy?</h3>
+          <p>If you have any questions, concerns, or wish to exercise your data rights, please reach out to us directly.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="mailto:Cor3Solutions@gmail.com" class="btn-primary-c" style="font-size:0.75rem;padding:0.5rem 1.25rem;">
+              <i class="bi bi-envelope me-1"></i>Cor3Solutions@gmail.com
+            </a>
+            <a href="tel:+639956605675" class="btn-ghost-c" style="font-size:0.75rem;padding:0.5rem 1.25rem;">
+              <i class="bi bi-telephone me-1"></i>+63 995 660 5675
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="Cor3 Solutions" class="footer-logo-img" />
+          <span class="footer-logo-text">COR3 SOLUTIONS</span>
+        </div>
+        <p class="footer-tagline">Smart Solutions for Modern Businesses</p>
+        <p class="footer-body-text">A Philippines-based digital agency delivering web systems, ML solutions, admin tools, social media, and content for brands that want to stand out.</p>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-2">
+        <p class="section-label mb-3">Services</p>
+        <nav class="footer-nav">
+          <a href="index.html#services">Web Dev &amp; ML</a>
+          <a href="index.html#services">Admin Task Mgmt</a>
+          <a href="index.html#services">Social Media</a>
+          <a href="index.html#services">UGC Content</a>
+        </nav>
+      </div>
+      <div class="col-6 col-lg-2">
+        <p class="section-label mb-3">Portfolio</p>
+        <nav class="footer-nav">
+          <a href="portfolio-web.html">Web Dev &amp; ML</a>
+          <a href="portfolio-admin.html">Admin Task Mgmt</a>
+          <a href="portfolio-social.html">Social Media</a>
+          <a href="portfolio-ugc.html">UGC Content</a>
+        </nav>
+      </div>
+      <div class="col-lg-2">
+        <p class="section-label mb-3">Company</p>
+        <nav class="footer-nav">
+          <a href="index.html#process">Process</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Cor3 Solutions. All rights reserved.</span>
+      <span class="footer-copy"><span class="highlight">+63 995 660 5675 · <a href="mailto:Cor3Solutions@gmail.com">Cor3Solutions@gmail.com</a></span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

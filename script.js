@@ -40,6 +40,13 @@ const ALLOWED_EXTERNAL_DOMAINS = new Set([
   'www.facebook.com',
   'facebook.com',
   'www.privacy.gov.ph',
+  // Client & portfolio websites
+  'www.batangas1pmfc.com',
+  'cor3-solutions.vercel.app',
+  'www.jadesalvador.com',
+  'mbk-sigma.vercel.app',
+  'goducate.vercel.app',
+  'locv2.vercel.app',
 ]);
 
 /**
